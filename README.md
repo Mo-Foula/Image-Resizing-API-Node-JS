@@ -60,7 +60,7 @@ Image resizer endpoint: which checks if the image exists on the server it return
 
 Get all images on server (edited images are not included) endpoint:
 ```
-/api/images?width=1800&height=1001&filename=santamonica
+/api/images/getAll
 ```
 
 
