@@ -1,5 +1,5 @@
-const generatePathsView = function (names: Array<string>) {
-    const header = `
+const generatePathsView = function (names: string[]): string {
+  const header = `
     <!DOCTYPE html>
 <html>
 
@@ -10,23 +10,22 @@ const generatePathsView = function (names: Array<string>) {
    <body>
       <ul>
     `
-    const footer = `
+  const footer = `
     </ul>
     </body>
     
  </html>
     `
 
-    let entries = ''
+  let entries = ''
 
-    names.forEach(function(name: string){
-        entries+=(`<li>${name}</li>`)
-    })
+  names.forEach(function (name: string) {
+    entries += `<li>${name}</li>`
+  })
 
-    if(entries == '') entries = 'No images found'
+  if (entries === '') entries = 'No images found'
 
-    return header+entries+footer
-
+  return header + entries + footer
 }
 
 export default generatePathsView

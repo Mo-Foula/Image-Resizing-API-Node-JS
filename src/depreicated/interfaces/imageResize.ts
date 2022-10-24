@@ -1,7 +1,7 @@
-interface imageResizeInterface { 
-    filename: string, 
-    height: number, 
-    width: number
-  };
+interface imageResizeInterface {
+  filename: string
+  height: number
+  width: number
+}
 
-export {imageResizeInterface}
+export { imageResizeInterface }
