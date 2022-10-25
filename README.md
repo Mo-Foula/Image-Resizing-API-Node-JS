@@ -51,6 +51,19 @@ To run the project previously built
 npm run r
 ```
 
+## Endpoints:
+
+Image resizer endpoint: which checks if the image exists on the server it returns it, if not it will create it and save it with the desired width and height in order to create multiple sizes of the same image
+```
+/api/images?width=1800&height=1001&filename=santamonica
+```
+
+Get all images on server (edited images are not included) endpoint:
+```
+/api/images/getAll
+```
+
+
 ## More information about the project
 
 This project aims to give you a real-world scenario in which you would read and write to your disk via a Node.js express server rather than a database. The project you create serves two purposes: to prepare you for setting up scalable code and architecture for real-world projects and tie together some of the most popular middleware and utilities found in Node.js projects. This project barely touches the surface of what is possible but will prove your ability to use what you’ve learned in real-world scenarios.
