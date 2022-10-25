@@ -1,52 +1,67 @@
 # Image Processing API
 
-
 ## NPM scripts:
 
 This project is written in TypeScript which needs to be compiled into JavaScript before running
 
 To build the project into 'build' folder and run the javascript files
+
 ```
 npm run start
 ```
 
 To run the typescript files without building them using nodemon with re-run upon changing files
+
 ```
 npm run nm
 ```
 
 To build the project into 'build' folder
+
 ```
 npm run build
 ```
 
-
 To test the project using the unit tests written in Jasmine
+
 ```
 npm run test
 ```
 
+To run prettier formatter on all project files
+
+```
+npm run format
+```
+
+#Eslint is configured with prettier for all of the following commands
+
 To run eslint on all project files
+
 ```
 npm run lint
 ```
 
 To run eslint on all project files and also fix fixable issues (formatting is included)
+
 ```
 npm run lint_f
 ```
 
 To run eslint on single file which needs to be inserted after the command
+
 ```
 npm run lint_s 'file_location.ts'
 ```
 
 To run eslint on single project file and also fix fixable issues (formatting is included) the file path needs to be inserted after the command
+
 ```
 npm run lint_f_s 'file_location.ts'
 ```
 
-To run the project previously built 
+To run the project previously built
+
 ```
 npm run r
 ```
@@ -54,15 +69,16 @@ npm run r
 ## Endpoints:
 
 Image resizer endpoint: which checks if the image exists on the server it returns it, if not it will create it and save it with the desired width and height in order to create multiple sizes of the same image
+
 ```
 /api/images?width=1800&height=1001&filename=santamonica
 ```
 
 Get all images on server (edited images are not included) endpoint:
+
 ```
 /api/images/getAll
 ```
-
 
 ## More information about the project
 
