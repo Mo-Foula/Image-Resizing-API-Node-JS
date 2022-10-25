@@ -10,8 +10,8 @@ export const imagesResizerController = async function (
 ): Promise<void> {
   try {
     const filename: string = req.query.filename as string
-    const height: number = Number(req.query.height as string)
-    const width: number = Number(req.query.width as string)
+    const height = Number(req.query.height as string)
+    const width = Number(req.query.width as string)
 
     res.sendFile(await imageResizer(filename, height, width))
   } catch (err: any) {

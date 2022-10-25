@@ -2,9 +2,7 @@ import fs from 'fs'
 
 import generatePathsView from '../views/generatePathsView'
 
-export const imagesGetter = async function (
-  path: string = 'images'
-): Promise<string> {
+export const imagesGetter = async function (path = 'images'): Promise<string> {
   try {
     const images: string[] = []
     const files = await fs.promises.readdir(path)

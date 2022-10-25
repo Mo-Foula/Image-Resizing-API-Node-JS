@@ -1,7 +1,7 @@
 import sharp from 'sharp'
 
 export const resizeImage = async function (
-  filename: string = '',
+  filename = '',
   height: number,
   width: number
 ): Promise<Buffer> {
