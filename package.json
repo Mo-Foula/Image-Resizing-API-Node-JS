@@ -10,7 +10,7 @@
     "lint_f": "npx eslint --fix src/**/*.ts",
     "lint_s": "npx eslint",
     "lint_f_s": "npx eslint --fix",
-    "format": "npx prettier --write ."
+    "format": "npx prettier --write src/**/*.ts"
   },
   "dependencies": {
     "express": "^4.18.2",
